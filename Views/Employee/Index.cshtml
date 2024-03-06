@@ -1,0 +1,17 @@
+@using Mvc.Models;
+<h1>Employees List</h1>
+<hr/>
+@{
+    //List<Employee> employees=(List<Employee>)ViewData["employees"];
+    //List<Employee> employees=ViewBag.empList;
+    List<Employee> employees=Model;
+    foreach(Employee emp in employees){
+        <p>@emp.name  @emp.salary <a href="/employee/Edit/@emp.id">Update</a>  <a href="/employee/Delete/@emp.id">Delete </a>  <a href="/employee/Details/@emp.id">Details </a></p>
+            
+        
+     
+    }
+    <br>
+    <a href="/employee/Insert">Insert Employee</a>
+
+}

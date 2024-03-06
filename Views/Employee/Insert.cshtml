@@ -1,0 +1,21 @@
+@using Mvc.Models;
+
+@{
+    ViewData["Title"] = "Edit Page";
+}
+
+<h1>Edit Existing Employee Details</h1>
+
+ <form method="post" asp-controller="Employee" asp-action="Insert">
+    <label>Id:</label>
+    <Label></Label>
+    <br />
+    <label> Name:</label>
+    <input type="text" name="name" value="" />
+    <br />
+    <label>salary:</label>
+    <input type="text" name="salary" value="" />
+    <br />
+    <button type="submit">Insert</button>
+</form>
+
